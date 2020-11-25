@@ -1,5 +1,8 @@
 package es.iessaladillo.pedrojoya.pr06.data
 
+import androidx.lifecycle.LiveData
+import es.iessaladillo.pedrojoya.pr06.data.model.User
+
 // TODO:
 //  Crear una singleton Database que implemente la interfaz DataSource.
 //  Al insertar un usuario, se le asignará un id autonumérico
@@ -10,3 +13,21 @@ package es.iessaladillo.pedrojoya.pr06.data
 //  Al consultar los usuario se deberá retornar un LiveData con la lista
 //  de usuarios ordenada por nombre
 
+object Database : DataSource {
+    override fun getAllUsersOrderedByName(): LiveData<List<User>> {
+        TODO("Not yet implemented")
+    }
+
+    override fun insertUser(user: User) {
+        TODO("Not yet implemented")
+    }
+
+    override fun updateUser(user: User) {
+        TODO("Not yet implemented")
+    }
+
+    override fun deleteUser(user: User) {
+        TODO("Not yet implemented")
+    }
+
+}
